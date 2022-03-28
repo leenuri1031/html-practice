@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0; padding: 0;}
+
+    .root{
+      width: 70vh;
+      height: 75vh;
+      background-color: #c4c4c4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; 
+      overflow: hidden;
+    }
+    .root div:nth-child(1){
+      width: 380px;
+      height: 240px;
+      background-color: tomato;
+      position: relative;
+      left: 450px;
+      cursor: pointer;
+      transition: 2s;
+    }
+
+    .root div:nth-child(1):hover{
+      background-color: darksalmon;
+    }
+
+
+
+    .root div:nth-child(2){
+      width: 600px;
+      height: 200px;
+      position: relative;
+      top: 40px;
+      left: 20px;
+      /* border: 2px dashed black; */
+    }
+
+    .root div:nth-child(3){
+      width: 380px;
+      height: 230px;
+      background-color: salmon;
+      position: relative;
+      left: 20px;
+      cursor: pointer;
+      transition: 3s;
+    }
+
+    .root div:nth-child(3):hover{
+      background-color: darkorange;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div></div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui saepe assumenda quia atque laboriosam incidunt ad inventore harum, rerum doloremque ea architecto quo id porro aliquid repellat reprehenderit, eaque, unde sunt? Laboriosam ullam illo, iste molestias sequi nihil fugiat numquam odio commodi cumque voluptatibus nam voluptates aspernatur, eveniet corporis.</div>
+    <div></div>
+  </div>
+</body>
+</html>

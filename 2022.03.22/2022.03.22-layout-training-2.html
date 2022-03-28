@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* style setting */
+
+    .border-1{
+      border: 1px solid black;
+    }
+
+    .border-2{
+      border: 1px solid red;
+    }
+
+    .flex-center-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .flex-center-center-colum{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .position-z-index-1{
+      position: absolute;
+      z-index: 1;
+    }
+
+    .position-z-index-2{
+      position: absolute;
+      z-index: 2;
+    }
+
+    /* --------------------------------------------------------- */
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container{
+      width: 428px;
+      height: 926px;
+    }
+
+    .container>div:nth-child(1){
+      width: 428px;
+      height: 926px;
+      background-color: #e2e1e1;
+    }
+
+    .container>div:nth-child(2){
+      width: 12vw;
+      height: 95.7vh;
+      background-color: #ffffff;
+      opacity: 0.5;
+    }    
+    /* width: 428px;  height: 926px; 범위를 넘어가고 있어 삐져나온 부분을 지우고 싶어서 overflow:hidden; 을 주고싶은데 부모인 컨테이너에 넣어도 적용되지 않음
+    -> 일단 크기조절로 함*/
+
+    .container>div:nth-child(1)>div:nth-child(1){ 
+      width: 428px;
+      height: 126px;
+    }
+
+    .container>div:nth-child(1)>div:nth-child(1)>div{
+      width: 400px;
+      height: 76px;
+      background-color: #eeeeee;
+    }
+
+    .container>div:nth-child(1)>div:nth-child(2){
+      width: 428px;
+      height: 650px;
+      background-color: #c4c4c4;
+    }
+
+    .container>div:nth-child(1)>div:nth-child(2)>div{
+      width: 400px;
+      height: 76px;
+      background-color: #eeeeee;
+      margin: 10px;
+    }
+
+    .container>div:nth-child(1)>div:nth-child(3){
+      width: 428px;
+      height: 150px;
+    }
+
+    .container>div:nth-child(1)>div:nth-child(3)>div{
+      width: 400px;
+      height: 100px;
+      text-align: justify;
+      color: #acacac;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="root flex-center-center">
+    <div class="container">
+      <div class="position-z-index-1">   <!--  전체 박스 -->
+        <div class="flex-center-center">
+          <div></div>
+        </div>   <!-- 위에 박스 -->
+        <div class="flex-center-center-colum">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>   <!-- 중간 박스 -->
+        <div class="flex-center-center">    <!-- 텍스트박스 -->
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam earum deserunt, omnis sunt id enim laborum quas sapiente libero</div>
+          </div>   
+      </div>
+      <div class="position-z-index-2"></div>  <!-- 겹쳐진 박스 -->
+    </div>
+  </div>
+</body>
+</html>

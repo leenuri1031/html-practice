@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .root{
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid turquoise;
+
+      display: flex;
+      justify-content: center;
+      align-items: center ;
+      flex-direction: column;
+    }
+
+    .root div{
+      width: 100px;
+      height: 100px;
+      background-color: antiquewhite;
+      border: 1px solid red;
+    }
+
+    .root div:nth-child(1){
+      position: absolute;
+      left: 200px;
+      bottom: 100px;
+      top: 100px;
+    }
+
+    .root div:nth-child(2){
+      position: relative;
+      right: 200px;
+      top: 100px  ;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

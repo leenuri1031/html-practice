@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* class setting */
+    .border-1{border: 1px solid black;}
+    .border-2{border: 1px solid rebeccapurple;}
+    .border-3{border: 1px solid salmon;}
+    .border-4{border: 1px solid greenyellow;}
+
+    .flex-center-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-around-center{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    /* -------------------------------------------------------- */
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* top box */
+    .root>div:nth-child(1){
+      width: 95vw;
+      height: 5vh;
+      margin: 2.5vw;
+      background-color: skyblue;
+    }
+
+    /* main box */
+    .root>div:nth-child(2){
+      width: 95vw;
+      height: 50%;
+    }
+
+    /* main boxes */
+    .root>div:nth-child(2)>div{
+      width: 45vw;
+      height: 50vh;
+    }
+
+    /* main box left */
+    .root>div:nth-child(2)>div:nth-child(1){
+      width: 45vw;
+      height: 50vh;
+      background-color: antiquewhite;
+    }
+
+    /* main box right-top */
+    .root>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+      width: 45vw;
+      height: 35vh;
+    }
+
+    /* main box right-top boxes */
+    .root>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div{
+      width: 20vw;
+      height: 35vh;
+      background-color: aquamarine;
+    }
+
+    /* main box right-bottom text */
+    .root>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+      width: 45vw;
+      height: 15vh;
+      margin-top: 2vh;
+      text-align: justify;
+    }
+    
+
+    /* footter */
+    .root>div:nth-child(3){
+      width: 95vw;
+      height: 40vh;
+      background-color: antiquewhite;
+      margin-top: 1vh;
+      margin-left: 1.5vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="root border-1">
+    <div></div>
+    <!-- finish -->
+    <div class="flex-around-center">
+      <div></div>
+      <div>
+        <div class="flex-around-center">
+          <div></div>
+          <div></div>
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error incidunt nam, distinctio voluptates perferendis quam qui consectetur tempora aliquam!</div>
+      </div>
+    </div>
+    <div></div>
+    <!-- finish -->
+  </div>
+</body>
+</html>

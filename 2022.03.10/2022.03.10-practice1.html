@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+   
+   *{margin: 0; padding: 0;}
+
+   .container{
+     width: 1920px;
+     height: 1080px;
+     background-color: cornsilk;
+   }
+
+   h1{
+     text-align: center;
+   }
+
+
+   .container div{
+     width: 1920px;
+     border: 2px solid midnightblue;
+   }
+
+   .container div:nth-child(1) div h1{
+     margin: 100px;
+   }
+
+   .container div:nth-child(1) div ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: large;
+   }
+
+    
+   .container div:nth-child(1) div ul li{
+     margin: 20px;
+     cursor: pointer;
+   }
+   
+   .container div:nth-child(1){
+     height: 300px;
+   }
+
+   .container div:nth-child(2){
+     height: 700px;
+     display: flex;
+     justify-content: center;
+   }
+
+
+   .container div:nth-child(2) main{
+     margin-top: 50px;
+     width: 860px;
+     height: 600px;
+     display: flex;
+     /* background-color: aqua; */
+   }
+
+   .container div:nth-child(2) main div{
+      width: 200px;
+      height: 500px;
+      margin: 50px;
+      /* background-color: aliceblue; */
+
+  </style>
+
+</head>
+
+<body>
+ 
+  <div class="container">
+    <div>
+      <div>
+        <h1> Welcome </h1>
+         <ul>
+          <li>Information</li>
+          <li>Store</li>
+          <li>Mail</li>
+          <li>Image</li>
+          <li>Profile</li>
+         </ul>
+      </div>
+    </div>
+    <div>
+      <main>
+        <div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus corrupti autem non ducimus necessitatibus repellat ratione eum perferendis officiis, fugit nam, perspiciatis corporis iste iure asperiores et neque dignissimos fuga.</p>
+          </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio id, quibusdam iure deleniti pariatur maxime, assumenda delectus necessitatibus nisi voluptas nobis quidem modi, atque nihil corporis explicabo eius magni.
+          </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis iure itaque, quia, quis ipsam laudantium dolores neque maxime minima architecto officiis dolorem deleniti facere animi minus in similique voluptatem?</p>
+          </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus cum voluptatibus iste laboriosam exercitationem alias eaque, sit, ipsam mollitia veniam, hic eos aspernatur maxime rem dolorum ut earum consequuntur!</p>
+          </div>
+      </main>
+    </div>
+  </div>
+
+  
+</body>
+</html>

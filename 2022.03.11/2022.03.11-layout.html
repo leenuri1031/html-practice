@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0; padding: 0; }
+
+    .root{
+      width: 100vw;
+      height: 100vh;
+      background-color: antiquewhite;
+    }
+
+
+    ul{
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    ul li{
+      margin: 1vw;
+    }
+
+    .container{
+      display: flex;      
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      background-color: aquamarine;
+      flex-direction: column;
+    }
+
+    .container h1 {
+      border: 1px solid red;
+      width: 7vw;
+    }
+    
+
+    .container div:nth-child(2){
+      border: 1px solid blue;
+      width: 50vw;
+      height: 5vh;
+    }
+
+    .container div:nth-child(3) {
+      border: 1px solid green;
+      width: 20vw;
+      height: 5vw;
+    }
+
+
+
+    .bottom div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+
+    .bottom div p{
+      width: 80vw;
+      text-align: right;
+    }
+
+    .bottom div p span{
+      color: gray;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+ <div class="root">
+   <div>
+    <ul>
+      <li>menu-1</li>
+      <li>menu-2</li>
+      <li>menu-3</li>
+      <li>menu-4</li>
+     </ul>
+   </div>
+   <div class="container">
+       <h1>logo</h1>
+       <div>search-field</div>
+       <div>button</div>
+   </div>
+  <div class="bottom">
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit.</span> Molestiae nesciunt aliquid temporibus, itaque amet recusandae tempore enim dicta repellat sit commodi reiciendis laboriosam magnam error explicabo, ullam aperiam vel dolorum at iusto. Atque unde consectetur eius possimus id error repellendus.
+    </div>
+  </div>
+ </div>
+
+  
+</body>
+</html>

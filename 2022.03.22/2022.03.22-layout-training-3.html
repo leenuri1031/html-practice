@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    :root{
+      --width-1:400px;
+      --height-1:800px;
+      --color-1:darkkhaki;
+      --color-2:#c4c4c4;
+      --color-3:whitesmoke;
+      --color-4:#9E9E9E;
+      --color-5:rgba(181, 209, 200, 0.933);
+    }
+
+    /* ------- 변수 -> 언제든지 변할 수 있는 속성 입력 
+       ------- class -> 속성을 정하고 여러번 사용 할 때*/
+
+      .width-height{
+        width: 370px;
+        height: 80px;
+      }
+
+    .flex-center-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .position-absolute{position: absolute;}
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    #wrapper{
+      width: 400px;
+      height: var(--height-1);
+    }
+
+    nav{
+      width: 200px;
+      height: 800px;
+      background-color: darkkhaki;
+      z-index: 1;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    
+    nav:hover{
+      background-color: pink;
+    }
+
+    main{
+      width: 400px;
+      height: 800px;
+      background-color:var(--color-2);
+      z-index: 0;
+    }
+
+    main>div:nth-child(1){
+      width: var(--width-1);
+      height: 120px;
+      background-color:var(--color-2) ;
+    }
+
+    main>div:nth-child(1)>div{
+      background-color: var(--color-5);
+    }
+
+    main>div:nth-child(2){
+      width: var(--width-1);
+      height: 550px;
+      background-color: var(--color-4);
+      flex-direction: column;
+    }
+    main>div:nth-child(2)>div{
+      background-color: var(--color-5);
+      margin: 10px;
+    }
+
+    main>div:nth-child(3){
+      width: var(--width-1);
+      height: 130px;
+      background-color: #c4c4c4;
+    }
+
+    main>div:nth-child(3)>div{
+      margin: 15px;
+      text-align: justify;
+      cursor: pointer;
+      transition: 0.5s;
+      color: var(--color-4);
+    }
+
+    main>div:nth-child(3)>div:hover{
+      color: var(--color-3);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root" class="flex-center-center">
+    <div id="wrapper">
+      <nav class="position-absolute"></nav>
+      <main class="position-absolute">
+        <div class="flex-center-center">
+          <div class="width-height"></div>
+        </div>
+        <div class="flex-center-center">
+          <div class="width-height"></div>
+          <div class="width-height"></div>
+          <div class="width-height"></div>
+          <div class="width-height"></div>
+          <div class="width-height"></div>
+        </div>
+        <div class="flex-center-center">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi nihil doloribus accusantium est sunt ratione harum itaque atque sed, nemo ipsa, dolore ipsum fuga sint cupiditate aut distinctio quibusdam!
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
