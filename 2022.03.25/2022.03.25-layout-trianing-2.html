@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0; padding: 0;}
+    
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+    }
+    
+    #root{
+      display: flex;
+    }
+
+    section{
+      border: 1px dotted black;
+    }
+
+    #root > section {
+      width: 50vw;
+      height: 100vh;
+    }
+
+    /* left */
+
+    #root > section:nth-child(1){
+      background-color: #ababab;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+
+    #root > section:nth-child(1)>div{
+      width: 30vw;
+      height: 30vw;
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius:50%;
+
+      position: relative;
+    }
+
+    #root > section:nth-child(1)>div:nth-child(1){
+      z-index: 2;
+      left: 100px;
+    }
+
+    #root > section:nth-child(1)>div:nth-child(2){
+      z-index: 1;
+      top: 100px;
+    }
+
+
+
+    /* right */
+
+    #root > section:nth-child(2){
+      background-color: #888;
+      display: flex;
+      align-items: center;
+    } 
+
+    #root > section:nth-child(2)>div{
+      width: 200px;
+      height: 200px;
+      border: 1px solid beige;
+      
+      overflow: scroll;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <section>
+      <!-- circles -->
+      <div></div>
+      <div></div>
+    </section>
+    <section>
+      <div>
+        <h1>hello</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non vero reprehenderit esse accusantium eum velit, minima vitae laborum consequatur. Amet expedita est natus sed magnam accusantium ex velit impedit! Provident?</p>
+        <div>friday</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
