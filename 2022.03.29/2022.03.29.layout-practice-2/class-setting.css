@@ -1,0 +1,160 @@
+*{margin: 0; padding: 0;}
+
+
+:root{
+  --color-black:black;
+  --color-white:white;
+  --color-bright-gray:#e2e2e2;
+  --color-gray:#c4c4c4;
+  --color-dark-gray:#888888;
+  --color-dark-blue:#4f508b;
+  --color-dark-red:#613c3c;
+  --width-root:100vw;
+  --height-root:100vh;
+  --border-solid-black:1px solid black;
+  --border-solid-gray:1px solid #888;
+  --border-solid-red:1px solid #613c3c;
+  --border-solid-blue:2px solid #4f508b;
+}
+
+.flex{display:flex ;}
+
+.flex-center-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-around-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-left-center{
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.flex-column{flex-direction: column;}
+
+.flex-row{flex-direction: row;}
+
+
+
+/* ----------------------------- style setting-------------------------------- */
+
+
+
+
+
+/* -----------------------------basic-style-------------------------- */
+
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+}
+
+header{
+  width: 100vw;
+  height: 20vh;
+  border-bottom: var(--border-solid-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d3070;
+  transition: 1s;
+
+}
+
+main{
+  width: 100vw;
+  height: 70vh;
+  border-bottom: var(--border-solid-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+
+}
+
+main>div{
+  width: 85%;
+  height: 25%;
+  background-color: #94a5be;
+  opacity: 0.5;
+  transition: 1s;
+
+}
+
+footer{
+  width: 100vw;
+  height: 10vh;
+  background-color: #94a5be;
+  transition: 1s;
+
+}
+
+footer>ul{
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+
+}
+
+
+
+
+
+/* -----------------------------mobile-style------------------------- */
+
+
+@media(max-width:428px){
+
+  #root{
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+  }
+  
+  header{
+    width: 100vw;
+    height: 15vh;
+  }
+
+  main{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+
+  main>div{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 20%;
+    background-color: #94a5be;
+    opacity: 0.5;
+  }
+
+}
+
+

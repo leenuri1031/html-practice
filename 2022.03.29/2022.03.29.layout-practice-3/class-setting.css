@@ -1,0 +1,201 @@
+*{margin: 0; padding: 0;}
+
+
+:root{
+  --color-black:black;
+  --color-white:white;
+  --color-bright-gray:#e2e2e2;
+  --color-gray:#c4c4c4;
+  --color-dark-gray:#888888;
+  --color-dark-blue:#4f508b;
+  --color-dark-red:#613c3c;
+  --width-root:100vw;
+  --height-root:100vh;
+  --border-solid-black:1px solid black;
+  --border-solid-gray:1px solid #888;
+  --border-solid-red:1px solid #613c3c;
+  --border-solid-blue:2px solid #4f508b;
+}
+
+.flex{display:flex ;}
+
+.flex-center-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-around-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-left-center{
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.flex-column{flex-direction: column;}
+
+.flex-row{flex-direction: row;}
+
+
+
+/* ----------------------------- style setting-------------------------------- */
+
+/* mobile-style */
+
+  .root{
+    width: var(--width-root);
+    height: var(--height-root);
+  }
+  
+  header{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--color-dark-gray);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  header>div{
+    width: 80%;
+    height: 60%;
+    background-color: var(--color-bright-gray);
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  header>div>div{
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-dark-gray);
+  }
+  
+  /* -------------------top--------------------finish */
+  
+  main{
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--color-bright-gray);
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  main>div{
+    width: 100%;
+    height: 90%;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  main>div>div{
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-bright-gray);
+    margin: 10px;
+  }
+  
+  /* -------------------middle--------------------finish */
+  
+  footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--color-dark-gray);
+  } 
+  
+  /* -------------------bottom--------------------finish */
+
+
+
+/* tablet-style */
+@media(min-width:428px){
+
+  .root{
+    display: flex;
+  }
+  
+  header{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  header>div{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  header>div>div{
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--color-dark-gray);
+  }
+  
+  /* -------------------top(left)--------------------finish */
+  
+  main{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main>div{
+    width: 80%;
+    height: 90%;
+    }
+
+    main>div>div{
+      
+    }
+  /*  가로배치 하고 싶은데 가로 배치가 안됨  */
+
+  
+  /* -------------------middle-------------------- */
+  
+  footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--color-dark-gray);
+    display: none;
+    visibility: hidden;
+    /* 요소를 숨기고 싶을 때 사용-visibility:hidden 
+    layout도 숨기고 싶을 때에는 display-none 주기! */
+  } 
+  
+  /* -------------------bottom--------------------finish */
+
+
+}
+
+
+/* desktop-style */
+
+
+
+

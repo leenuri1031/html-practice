@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  *{margin: 0; padding: 0;}
+
+  #root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s;
+  }
+
+
+  #root>div{
+    width: 30vw;
+    height: 30vw;
+    background-color: skyblue;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(max-width:428px){
+
+    #root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #root>div{
+    width: 70vw;
+    height: 70vw;
+    background-color: sandybrown;
+  }
+  
+  }
+
+  </style>
+
+</head>
+<body>
+  <div id="root">
+      <div>item</div>
+      <div>item</div>
+      <div>item</div>
+  </div>
+</body>
+</html>
