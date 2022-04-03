@@ -1,0 +1,60 @@
+
+/* desktop-style--------------------------------------------------- */
+
+
+@media (min-width:1020px){
+
+
+/* ------------------------------------------------------- */
+/* header */
+header{ height: 25vh; }
+
+
+/* main */
+main{width: var(--width-root); height: 80vh;}
+
+#container{width: 60%;  height: 100%;}
+
+/* main-top-box */
+#container>div:nth-child(1){height: 45%;}
+
+#container>div:nth-child(1)>h3{width: 90%; height: 20%; }
+
+
+/* main-top-id-box */
+#id-box{width: 50%; height: 100%;
+  justify-content: space-between;
+}
+
+#id-box>div:nth-child(1){width: 100%; height: 20%;
+  color: var(--color-dark-red);
+}
+
+#id-box>div:nth-child(2){
+  width: 100%; 
+  height: 80%; 
+}
+
+
+/* main-top-pw-box */
+#pw-box{width: 50%; height: 40%;
+  justify-content: space-around;
+}
+
+#pw-box>div:nth-child(1){width: 100%; height:20%;
+}
+
+#pw-box>div:nth-child(2){
+  width: 100%; 
+  height: 80%; }
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+
+
+}
