@@ -16,7 +16,7 @@
 /* main */
 main{width: var(--width-root); height: 80vh;}
 
-#container{width: 60%;  height:95%; justify-content: space-around;}
+#container{width: 60%;  height:95%; justify-content: center;}
 
 /* main-top-box */
 #container>div:nth-child(1){width: 100%;  height: 40%;
@@ -59,7 +59,7 @@ main{width: var(--width-root); height: 80vh;}
 
 /* main-bottom-box */
 
-#container>div:nth-child(2){width: 100%;  height: 50%; justify-content: space-around;}
+#container>div:nth-child(2){width: 100%;  height: 30%;}
 
 
 /* main-bottom-buttun-box */
@@ -70,7 +70,9 @@ main{width: var(--width-root); height: 80vh;}
 /* 아이템(로그인 버튼)을 감싸고 있는 박스가 height를 줄여도 작아지지 않고 있음 
 그와 더불어 sns박스의 높이도 줄어들지 않고 있음*/
 
-#button-box>div:nth-child(1){width: 60%; height: 30%;  }
+#button-box>div:nth-child(1){width: 50%; height: 30%; 
+  /* border: var(--border-solid-black); */
+}
 
 #button-box>div>div{ width: 40%; height: 80%; 
   background-color: var(--color-mid-pink);
@@ -78,7 +80,9 @@ main{width: var(--width-root); height: 80vh;}
   color: var(--color-light-pink);
 }
 
-#button-box>div:nth-child(2){width: 50%; height: 50%; }
+#button-box>div:nth-child(2){width: 50%; height: 50%; 
+  /* border: var(--border-solid-black); */
+}
 
 /* main-bottom-sns-box */
 #sns-box{width: 100%; height: 80%; border: var(--border-solid-pink); border-radius: 20px;}
