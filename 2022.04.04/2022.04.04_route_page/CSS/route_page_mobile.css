@@ -1,0 +1,92 @@
+/* mobile-style--------------------------------------------------- */
+
+#root{
+  width: var(--width-root);
+  height: var(--height-root);
+}
+
+/* ------------------------------------------------------- */
+/* header */
+
+header{
+  width: 100%;
+  height: 30%;
+}
+
+header>div:nth-child(1){
+  width: 50px;
+  height: 50px;
+  border: var(--border-solid-pink);
+}
+
+header>div:nth-child(2){
+  width: 100%;
+  height: 60%;
+  border: var(--border-solid-pink);
+}
+
+
+
+/* main */
+/* ------------------------------------------------------- */
+
+main{
+  width: 100%;
+  height: 60%;
+}
+
+
+main>div:nth-child(1){
+  width: 80%;
+  height: 60%;
+}
+
+main>div:nth-child(2){
+  width: 40%;
+  height: 10%;
+  background-color: var(--color-light-pink);
+  border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+/* ------------------------------------------------------- */
+
+footer{
+  width: 100%;
+  height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
